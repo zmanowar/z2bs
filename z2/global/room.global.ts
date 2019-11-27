@@ -1,5 +1,5 @@
 import { PresetUnit } from './presetunit.global';
-import { Unit } from './me.global';
+import { Unit } from './unit.global';
 
 export class Room {
     public number: number;
