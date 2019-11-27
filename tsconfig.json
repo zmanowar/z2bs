@@ -1,17 +1,16 @@
 {
     "compilerOptions": {
-      "esModuleInterop": true,
+      "module": "system",
+      "esModuleInterop": false,
       "moduleResolution": "node",
       "sourceMap": true,
-      "outDir": "d2bs/d2bs/z2",
-      "target": "es6",
-      "lib": ["es6"]
+      "outDir": "d2bs/d2bs/z2bot",
+      "target": "es5",
+      "downlevelIteration": false,
+      "lib": ["es5"]
     },
     "include": [ 
-      "./z2/global"
-    ],
-    "exclude": [
-      "node_modules",
-      "**/node_modules/*",
+      "./z2",
+      "./z2/**/*.ts"
     ]
   }
