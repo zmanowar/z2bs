@@ -1,0 +1,7 @@
+node_modules/
+d2bs/
+d2bs/data/
+d2bs/logs/
+d2bs/d2bs/d2bs.production.ini
+
+!/**/.gitkeep
