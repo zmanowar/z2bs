@@ -1,11 +1,17 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
       "esModuleInterop": true,
-      "target": "es6",
       "moduleResolution": "node",
       "sourceMap": true,
-      "outDir": "d2bs/d2bs/z2"
+      "outDir": "d2bs/d2bs/z2",
+      "target": "es6",
+      "lib": ["es6"]
     },
-    "lib": ["ES6"]
+    "include": [ 
+      "./z2/global"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/node_modules/*",
+    ]
   }
