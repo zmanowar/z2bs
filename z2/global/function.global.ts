@@ -1,5 +1,5 @@
 import { Room } from './room.global';
-import { Unit } from './unit.global';
+import { Unit } from './me.global';
 import { Party } from './party.global';
 import { PresetUnit } from './presetunit.global';
 import { Area } from './area.global';
