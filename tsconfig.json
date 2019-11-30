@@ -1,9 +1,8 @@
 {
     "compilerOptions": {
-      "module": "system",
+      "module": "esnext",
       "esModuleInterop": false,
-      "moduleResolution": "node",
-      "sourceMap": true,
+      "sourceMap": false,
       "outDir": "d2bs/d2bs/z2bot",
       "target": "es5",
       "downlevelIteration": false,

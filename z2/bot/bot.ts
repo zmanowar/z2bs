@@ -1,4 +1,4 @@
-import { messages } from "./messages";
+import { messages } from './messages';
 
 export class Bot {
     public handle: number;
@@ -26,9 +26,5 @@ export class Bot {
 
     public printToConsole = (msg: string, color?: number, tooltip?: string, trigger?: string) => {
         messages.printToConsole(msg, this.handle, color, tooltip, trigger);
-    };
-
-    public printToItemLog = (item: Unit): void => {
-        messages.printToItemLog(item, this.handle);
     };
 }
