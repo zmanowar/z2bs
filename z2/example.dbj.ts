@@ -1,21 +1,23 @@
-import { Bot } from './bot/bot';
+import { Bot, main } from './bot/bot';
+import { Menu } from './bot/menu';
+import { messages } from './bot/message';
+import { getControlx } from './data/control';
+
+me.debug = true;
 
 class Z2Bot extends Bot {
     public start = (): void => {
-        print('Starting: ' + this.handle);
-        this.printToConsole('Starting...');
+        setInterval(this.mainLoop, 100);
+        messages.log('Starting main loop.');
     };
+    
+    public mainLoop = (): void => {
+        Menu.click(getControlx('singlePlayer'));
+    }
 }
 
 //In other bots you may see `function main()`
 //Technically this is within the iife `main` function.
-print('Loading Bot');
 const mainBot = new Z2Bot();
 
-// This is gross, but it's how the entry scripts prefer to be handled.
-// I'll be keeping it like this until I can figure out a better way to wait
-// for copy data.
-
-while (true) { // eslint-disable-line
-    delay(10);
-}
+main();

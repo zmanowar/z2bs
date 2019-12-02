@@ -52,6 +52,7 @@ declare function getBaseStat(
     statNameOrId: string | number,
 ): string;
 
+/** Gets the control (button, link, etc) by type, location, and size */
 declare function getControl(type: number, x: number, y: number, xSize: number, ySize: number): Control;
 
 declare function getPlayerFlag(firstUnitId: number, secondUnitId: number, flag: number): boolean;

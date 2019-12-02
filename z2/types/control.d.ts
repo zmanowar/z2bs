@@ -11,7 +11,7 @@ declare class Control {
     public cursorPos: number;
     public selectstart: number;
     public selectend: number;
-    //TODO: Check if actually number
+    /** UNUSABLE: Returns a number that indicates if the button is disabled. */
     public disabled: number;
 
     public getNext(): Control;

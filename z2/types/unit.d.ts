@@ -1,4 +1,9 @@
 declare class Unit {
+    /** Overloading me for global bot attributes */
+    public static debug: boolean;
+    public static handle: number;
+
+    /** Basic attributes and methods. */
     public type: number;
     public classId: number;
     public mode: number;
@@ -62,7 +67,8 @@ declare class Unit {
     public quitonhostile: boolean;
     public blockKeys: boolean;
     public blockMouse: boolean;
-    public gameReady: boolean;
+    /** If the game is ready for input */
+    public static gameReady: boolean;
     /** The profile name currently being used. */
     public static profile: string;
     public nopickup: boolean;
@@ -114,7 +120,7 @@ declare class Unit {
 
     public getEnchant(enchant: number): boolean;
 
-    public setSkill(skill: string | number, hand: number, item?: Unit): boolean;
+    public static setSkill(skill: string | number, hand: number, item?: Unit): boolean;
 
     public move(x?: number, y?: number): void;
 
