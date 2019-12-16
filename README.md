@@ -22,14 +22,11 @@ Exposes global functions and classes and attempts to keep the same method signat
     public int getPrice ( Unit npc, int buysell, int difficulty )
     public int getPrice ( int npcId, int buysell, int difficulty )
     public bool getEnchant ( int nEnchant )
-    public bool setSkill ( String skillName, int nHand )
-    public bool setSkill ( int nSkillId, int nHand )
 
 **z2** *ts*:
 
     public getPrice(npc: Unit | number, buySell: number, difficulty?: number): number;
     public getEnchant(enchant: number): boolean;
-    public static setSkill(skill: string | number, hand: number, item?: Unit): boolean;
 
 ## Example Bot
 An example bot is provided with very limited functionality ([example.dbj.ts](https://github.com/zmanowar/z2/blob/master/z2/example.dbj.ts)). The only functionality in this script is to click on the single player menu button.
