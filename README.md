@@ -1,5 +1,5 @@
 
-# z2
+# z2bs
 z2 is a framework for developing Diablo 2 bots on the [D2BS](https://github.com/noah-/d2bs) system.
 
 **This is not a functioning Diablo 2 bot.** 
